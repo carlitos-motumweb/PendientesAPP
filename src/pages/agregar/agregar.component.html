@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>{{nombreLista | validarVacio:'Nueva Lista'}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-card>
+    <ion-card-content>
+        <ion-item>
+          <ion-label floating>Nombre de lista</ion-label>
+          <ion-input type="text" [(ngModel)]="nombreLista" name="nombreLista"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Tarea</ion-label>
+          <ion-input type="text" [(ngModel)]="nombreItem" name = "nombreItem" (keyup.enter)="agregarItem()"></ion-input>
+        </ion-item>
+      <button ion-button outline class="button-block" (click)="agregarItem()">Agregar</button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf='listaTareas.length > 0'>
+    <ion-card-header>
+      <ion-item>
+        <ion-label>Tareas</ion-label>
+      </ion-item>
+    </ion-card-header>
+    <ion-card-content>
+        <ion-item *ngFor="let tarea of listaTareas; let i = index">
+          <button ion-button color="dark" clear>{{tarea.nombre}}</button>
+          <button ion-button outline icon-right color="danger" (click)="eliminarTarea(i)"><ion-icon ios="ios-trash" md="md-trash"></ion-icon>Borrar tarea</button>
+        </ion-item>
+      <button ion-button icon-left class="button-block" (click)="guardarLista()"><ion-icon ios="ios-add" md="md-add"></ion-icon>Guardar</button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
