@@ -8,22 +8,6 @@ export class ListaDeseosService {
   listas: Lista[] = [];
 
   constructor() {
-    // let lista1: Lista;
-    // let lista2: Lista;
-    // let itemsCompras: ListaItem[] = [];
-    // let itemsLibros: ListaItem[] = [];
-    // itemsCompras.push(new ListaItem("colchon cama"));
-    // itemsCompras.push(new ListaItem("comedor"));
-    // itemsCompras.push(new ListaItem("sala"));
-    // itemsLibros.push(new ListaItem("El evangelio segun jesucristro"));
-    // itemsLibros.push(new ListaItem("El marciano"));
-    // itemsLibros.push(new ListaItem("Cien años de soledad"));
-    // lista1 = new Lista("Compras");
-    // lista1.items = itemsCompras;
-    // lista2 = new Lista("Libros por leer");
-    // lista2.items = itemsLibros;
-    // this.listas.push(lista1);
-    // this.listas.push(lista2);
     console.log("Servicio listadeseos inicializado...");
     this.cargarData();
   }
@@ -40,6 +24,11 @@ export class ListaDeseosService {
 
   agregarLista(lista: Lista){
       this.listas.push(lista);
+      this.actualizarData();
+  }
+
+  eliminarLista(indice: number){
+      this.listas.splice(indice,1);
       this.actualizarData();
   }
 

@@ -5,7 +5,17 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-card *ngFor="let listaTemp of _listaDeseosService.listas; let i = index" color="primary">
+
+    <ion-grid *ngIf="(_listaDeseosService.listas | verPorEstado:false).length === 0">
+      <ion-row>
+        <ion-col col-12 class="text-center caja-vacia">
+            <ion-icon class="icono-grande" ios="ios-sunny" md="md-sunny"></ion-icon>
+            <p >No existen listas</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  <ion-card *ngFor="let listaTemp of _listaDeseosService.listas | verPorEstado:false ; let i = index" color="primary">
     <ion-item color="dark" (click)="verDetalle(listaTemp, i)">
       <h2>{{listaTemp.nombre}}</h2>
       <ion-note item-right>

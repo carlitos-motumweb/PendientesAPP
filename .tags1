@@ -1,0 +1,11 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ion	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/detalle/detalle.component.html	/^<ion-header>$/;"	function	line:1
+ion	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/detalle/detalle.component.html	/^  <ion-navbar color="primary">$/;"	function	line:2
+ion	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/detalle/detalle.component.html	/^    <ion-title>{{lista.nombre}}<\/ion-title>$/;"	function	line:3
+ion	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/detalle/detalle.component.html	/^<ion-content padding>$/;"	function	line:7
+h	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/detalle/detalle.component.html	/^<h3>{{lista.nombre}}<\/h3>$/;"	function	line:8

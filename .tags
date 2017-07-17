@@ -1,0 +1,21 @@
+ion	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/pendientes/pendientes.component.html	/^<ion-header>$/;"	function	line:1
+ion	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/pendientes/pendientes.component.html	/^  <ion-navbar color="primary">$/;"	function	line:2
+ion	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/pendientes/pendientes.component.html	/^    <ion-title>Lista de Pendientes<\/ion-title>$/;"	function	line:3
+ion	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/pendientes/pendientes.component.html	/^<ion-content padding>$/;"	function	line:7
+ion	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/pendientes/pendientes.component.html	/^  <ion-card *ngFor="let listaTemp of _listaDeseosService.listas; let i = index" color="primary">$/;"	function	line:8
+ion	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/pendientes/pendientes.component.html	/^    <ion-item color="dark" (click)="verDetalle(listaTemp, i)">$/;"	function	line:9
+h	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/pendientes/pendientes.component.html	/^      <h2>{{listaTemp.nombre}}<\/h2>$/;"	function	line:10
+ion	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/pendientes/pendientes.component.html	/^      <ion-note item-right>$/;"	function	line:11
+ion	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/pendientes/pendientes.component.html	/^    <ion-list >$/;"	function	line:16
+ion	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/pendientes/pendientes.component.html	/^      <ion-item *ngFor="let item of listaTemp.items | slice:0:2" (click)="verDetalle(listaTemp, i)">$/;"	function	line:17
+ion	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/pendientes/pendientes.component.html	/^          <ion-icon *ngIf="!item.completado" ios="ios-square-outline" md="md-square-outline"><\/ion-icon>$/;"	function	line:18
+ion	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/pendientes/pendientes.component.html	/^          <ion-icon *ngIf="item.completado" ios="ios-checkbox-outline" md="md-checkbox-outline"><\/ion-icon>$/;"	function	line:19
+ion	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/pendientes/pendientes.component.html	/^    <ion-item >$/;"	function	line:23
+ion	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/pendientes/pendientes.component.html	/^      <ion-icon *ngIf="listaTemp.items.length > 2" ios="ios-arrow-dropdown" md="md-arrow-dropdown"><\/ion-icon>$/;"	function	line:24
+ion	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/pendientes/pendientes.component.html	/^  <ion-fab right bottom>$/;"	function	line:29
+button	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/pendientes/pendientes.component.html	/^    <button ion-fab color="primary" (click)="agregarLista()"><ion-icon name="ios-add"><\/ion-icon><\/button>$/;"	function	line:30
+ion	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/detalle/detalle.component.html	/^<ion-header>$/;"	function	line:1
+ion	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/detalle/detalle.component.html	/^  <ion-navbar color="primary">$/;"	function	line:2
+ion	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/detalle/detalle.component.html	/^    <ion-title>{{lista.nombre}}<\/ion-title>$/;"	function	line:3
+ion	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/detalle/detalle.component.html	/^<ion-content padding>$/;"	function	line:7
+h	/home/carlitos/Documentos/cursos-UDEMY/Ionic/PendientesApp/PendientesAPP/src/pages/detalle/detalle.component.html	/^<h3>{{lista.nombre}}<\/h3>$/;"	function	line:8

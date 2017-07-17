@@ -13,6 +13,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import{ValidarVacioPipe} from './pipes/validarVacio.pipe';
+import{VerPorEstado} from './pipes/verPorEstado.pipe';
 
 import {ListaDeseosService} from './services/lista_deseos.service';
 
@@ -24,7 +25,8 @@ import {ListaDeseosService} from './services/lista_deseos.service';
     TabsPage,
     AgregarComponent,
     DetalleComponent,
-    ValidarVacioPipe
+    ValidarVacioPipe,
+    VerPorEstado
   ],
   imports: [
     BrowserModule,
