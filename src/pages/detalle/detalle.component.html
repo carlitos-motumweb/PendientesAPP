@@ -5,5 +5,17 @@
 </ion-header>
 
 <ion-content padding>
-<h3>{{lista.nombre}}</h3>
+  <ion-card>
+    <ion-card-content>
+        <ion-item>
+          <ion-label floating>Nombre de lista</ion-label>
+          <ion-input type="text" [(ngModel)]="lista.nombre" name="lista.nombre"></ion-input>
+        </ion-item>
+        <ion-item *ngFor="let tarea of lista.items; let i = index" (click)="marcarTarea(tarea)">
+          <ion-icon item-left *ngIf="!tarea.completado" ios="ios-square-outline" md="md-square-outline"  ></ion-icon>
+          <ion-icon item-left *ngIf="tarea.completado" ios="ios-checkbox-outline" md="md-checkbox-outline" ></ion-icon>
+          <h2 [class.tachado]="tarea.completado">{{tarea.nombre}}</h2>
+        </ion-item>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
